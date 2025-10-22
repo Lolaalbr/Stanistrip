@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants & Gastronomie - Stanis'Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Stanis'Trip Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <div class="dropdown">
+                        <a href="nourriture.html" class="dropbtn">
+                            <i class="fas fa-utensils"></i> Nourriture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#restaurants">Restaurants</a>
+                            <a href="#bars">Bars</a>
+                            <a href="#cafes">Cafés</a>
+                            <a href="#gastronomie">Gastronomie Locale</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="culture.html" class="dropbtn">
+                            <i class="fas fa-landmark"></i> Culture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="culture.html#monuments">Monuments</a>
+                            <a href="culture.html#musees">Musées</a>
+                            <a href="culture.html#architecture">Architecture</a>
+                            <a href="culture.html#histoire">Histoire</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="activite.html" class="dropbtn">
+                            <i class="fas fa-running"></i> Activité
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="activite.html#sports">Sports</a>
+                            <a href="activite.html#nature">Nature</a>
+                            <a href="activite.html#loisirs">Loisirs</a>
+                            <a href="activite.html#enfants">Pour Enfants</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="evenement.html" class="dropbtn">
+                            <i class="fas fa-calendar-alt"></i> Événement
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="evenement.html#festivals">Festivals</a>
+                            <a href="evenement.html#concerts">Concerts</a>
+                            <a href="evenement.html#expositions">Expositions</a>
+                            <a href="evenement.html#sports-events">Événements Sportifs</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="shopping.html" class="dropbtn">
+                            <i class="fas fa-shopping-bag"></i> Shopping
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="shopping.html#centres">Centres Commerciaux</a>
+                            <a href="shopping.html#boutiques">Boutiques</a>
+                            <a href="shopping.html#marches">Marchés</a>
+                            <a href="shopping.html#artisanat">Artisanat Local</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Gastronomie Nancéienne</h1>
+            <p class="hero-subtitle">Découvrez les saveurs authentiques de Nancy</p>
+        </div>
+    </section>
+
+    <!-- Restaurants Section -->
+    <section id="restaurants" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Restaurants Incontournables</h2>
+                <p>Les meilleures adresses de Nancy</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800" alt="La Toque d'Or">
+                        <span class="tag">Gastronomique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>La Toque d'Or</h3>
+                        <p class="card-description">
+                            Restaurant gastronomique proposant une cuisine française raffinée dans un cadre élégant du 18ème siècle.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-star"></i> Étoilé Michelin</span>
+                            <span><i class="fas fa-euro-sign"></i> €€€€</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Centre-ville</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/capucin.jpg" alt="Le Capucin Gourmand">
+                        <span class="tag">Traditionnel</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Le Capucin Gourmand</h3>
+                        <p class="card-description">
+                            Cuisine lorraine authentique dans une atmosphère chaleureuse. Spécialité de quiche lorraine et potée.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-utensils"></i> Cuisine locale</span>
+                            <span><i class="fas fa-euro-sign"></i> €€</span>
+                            <span><i class="fas fa-users"></i> Familles</span>
+                        </div>
+                        <a href="#" class="btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/excelsior.jpg.webp" alt="L'Excelsior">
+                        <span class="tag">Art Nouveau</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>L'Excelsior</h3>
+                        <p class="card-description">
+                            Brasserie emblématique classée Monument Historique avec son décor Art Nouveau préservé.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-landmark"></i> Monument</span>
+                            <span><i class="fas fa-euro-sign"></i> €€€</span>
+                            <span><i class="fas fa-clock"></i> Ouvert 7j/7</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800" alt="Les Pissenlits">
+                        <span class="tag">Bistronomique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Les Pissenlits</h3>
+                        <p class="card-description">
+                            Bistrot contemporain proposant une cuisine créative à base de produits frais et de saison.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-leaf"></i> Produits locaux</span>
+                            <span><i class="fas fa-euro-sign"></i> €€</span>
+                            <span><i class="fas fa-heart"></i> Coup de cœur</span>
+                        </div>
+                        <a href="#" class="btn-primary">Voir le menu</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/tanesy.jpg" alt="Chez Tanesy">
+                        <span class="tag">Végétarien</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chez Tanesy</h3>
+                        <p class="card-description">
+                            Restaurant végétarien et végan proposant des plats créatifs et colorés dans un cadre moderne.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-seedling"></i> 100% Végétal</span>
+                            <span><i class="fas fa-euro-sign"></i> €</span>
+                            <span><i class="fas fa-check"></i> Bio</span>
+                        </div>
+                        <a href="#" class="btn-primary">Commander</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800" alt="La Table du Bon Roi Stanislas">
+                        <span class="tag">Historique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>La Table du Bon Roi Stanislas</h3>
+                        <p class="card-description">
+                            Restaurant gastronomique situé Place Stanislas, offrant une vue imprenable sur la place dorée.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-crown"></i> Place Stanislas</span>
+                            <span><i class="fas fa-euro-sign"></i> €€€€</span>
+                            <span><i class="fas fa-wine-glass"></i> Cave d'exception</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bars Section -->
+    <section id="bars" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Bars & Pubs</h2>
+                <p>Les meilleures adresses pour sortir</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800" alt="Le Bar Stan">
+                        <span class="tag">Cocktails</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Le Bar Stan</h3>
+                        <p class="card-description">
+                            Bar à cocktails élégant avec mixologues experts et ambiance feutrée en plein centre-ville.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-cocktail"></i> Cocktails</span>
+                            <span><i class="fas fa-music"></i> Live DJ</span>
+                            <span><i class="fas fa-clock"></i> 18h - 2h</span>
+                        </div>
+                        <a href="#" class="btn-primary">Voir la carte</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1436076863939-06870fe779c2?w=800" alt="The Cambridge">
+                        <span class="tag">Pub</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>The Cambridge</h3>
+                        <p class="card-description">
+                            Pub anglais authentique avec large sélection de bières et ambiance conviviale.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-beer"></i> 50+ Bières</span>
+                            <span><i class="fas fa-tv"></i> Matchs sportifs</span>
+                            <span><i class="fas fa-gamepad"></i> Jeux</span>
+                        </div>
+                        <a href="#" class="btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800" alt="Le Vertigo">
+                        <span class="tag">Rooftop</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Le Vertigo</h3>
+                        <p class="card-description">
+                            Bar rooftop avec vue panoramique sur Nancy. Idéal pour un apéritif au coucher du soleil.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-sun"></i> Vue 360°</span>
+                            <span><i class="fas fa-wine-glass-alt"></i> Vins fins</span>
+                            <span><i class="fas fa-cloud-sun"></i> Terrasse</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cafés Section -->
+    <section id="cafes" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Salons de Thé & Cafés</h2>
+                <p>Pour une pause gourmande</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800" alt="Maison des Sœurs Macarons">
+                        <span class="tag">Pâtisserie</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Maison des Sœurs Macarons</h3>
+                        <p class="card-description">
+                            La référence du macaron de Nancy depuis 1793. Recette originale gardée secrète.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-cookie"></i> Macarons</span>
+                            <span><i class="fas fa-history"></i> Depuis 1793</span>
+                            <span><i class="fas fa-award"></i> Authentique</span>
+                        </div>
+                        <a href="#" class="btn-primary">Commander</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800" alt="Café Foy">
+                        <span class="tag">Historique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Café Foy</h3>
+                        <p class="card-description">
+                            Café emblématique Place Stanislas, parfait pour observer l'animation de la place dorée.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-coffee"></i> Café d'exception</span>
+                            <span><i class="fas fa-landmark"></i> Place Stanislas</span>
+                            <span><i class="fas fa-sun"></i> Terrasse</span>
+                        </div>
+                        <a href="#" class="btn-primary">Voir la carte</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800" alt="Thé Ô">
+                        <span class="tag">Salon de Thé</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Thé Ô</h3>
+                        <p class="card-description">
+                            Salon de thé cosy proposant plus de 150 thés du monde et pâtisseries maison.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-mug-hot"></i> 150+ Thés</span>
+                            <span><i class="fas fa-cake"></i> Pâtisserie</span>
+                            <span><i class="fas fa-book"></i> Coin lecture</span>
+                        </div>
+                        <a href="#" class="btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomie Section -->
+    <section id="gastronomie" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Spécialités Lorraines</h2>
+                <p>Les incontournables de la gastronomie locale</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/quiche.jpg" alt="Quiche Lorraine">
+                        <div class="highlight-badge">Tradition</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Quiche Lorraine</h3>
+                        <p>
+                            La véritable quiche lorraine, avec ses lardons fumés et sa crème onctueuse. Un classique indémodable à déguster dans les boulangeries traditionnelles.
+                        </p>
+                        <a href="#" class="btn-link">Où la déguster <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/bergamotte.jpg" alt="Bergamote de Nancy">
+                        <div class="highlight-badge">Spécialité</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Bergamote de Nancy</h3>
+                        <p>
+                            Bonbon translucide parfumé à l'essence de bergamote, emblème de Nancy depuis le 19ème siècle. Un cadeau parfait à ramener.
+                        </p>
+                        <a href="#" class="btn-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/macarons.jpg" alt="Macaron de Nancy">
+                        <div class="highlight-badge">Authentique</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Macaron de Nancy</h3>
+                        <p>
+                            À ne pas confondre avec le macaron parisien ! Petit biscuit croustillant à l'extérieur et moelleux à l'intérieur, recette ancestrale.
+                        </p>
+                        <a href="#" class="btn-link">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/tartemirabelle.jpg" alt="Mirabelle">
+                        <div class="highlight-badge">Lorraine</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Tarte aux Mirabelles</h3>
+                        <p>
+                            La mirabelle est LE fruit de Lorraine. En saison (août-septembre), dégustez cette délicieuse tarte ou l'eau-de-vie artisanale.
+                        </p>
+                        <a href="#" class="btn-link">Les meilleurs endroits <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/patee.jpg" alt="Potée Lorraine">
+                        <div class="highlight-badge">Réconfortant</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Patée Lorrain</h3>
+                        <p>
+                            Plat traditionnel hivernal composé de viandes et légumes mijotés. Parfait pour se réchauffer après une balade en ville.
+                        </p>
+                        <a href="#" class="btn-link">Où en manger <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/baba.jpg" alt="Baba au Rhum">
+                        <div class="highlight-badge">Royal</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Baba au Rhum</h3>
+                        <p>
+                            Créé à Nancy par Stanislas Leszczynski ! Ce dessert emblématique est né dans les cuisines du roi de Pologne.
+                        </p>
+                        <a href="#" class="btn-link">L'histoire <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Restez Informé</h2>
+                <p>Recevez nos dernières recommandations et bons plans directement dans votre boîte mail</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stanis'Trip</h3>
+                    <p>Votre guide complet pour découvrir Nancy et ses trésors cachés.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="nourriture.html">Nourriture</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activite.html">Activité</a></li>
+                        <li><a href="evenement.html">Événement</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@stanistrip.fr</li>
+                        <li><i class="fas fa-phone"></i> +33 3 83 XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nancy, France</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stanis'Trip. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

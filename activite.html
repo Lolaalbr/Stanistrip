@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activités & Loisirs - Stanis'Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Stanis'Trip Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <div class="dropdown">
+                        <a href="nourriture.html" class="dropbtn">
+                            <i class="fas fa-utensils"></i> Nourriture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="nourriture.html#restaurants">Restaurants</a>
+                            <a href="nourriture.html#bars">Bars</a>
+                            <a href="nourriture.html#cafes">Cafés</a>
+                            <a href="nourriture.html#gastronomie">Gastronomie Locale</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="culture.html" class="dropbtn">
+                            <i class="fas fa-landmark"></i> Culture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="culture.html#monuments">Monuments</a>
+                            <a href="culture.html#musees">Musées</a>
+                            <a href="culture.html#architecture">Architecture</a>
+                            <a href="culture.html#histoire">Histoire</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="activite.html" class="dropbtn">
+                            <i class="fas fa-running"></i> Activité
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#sports">Sports</a>
+                            <a href="#nature">Nature</a>
+                            <a href="#loisirs">Loisirs</a>
+                            <a href="#enfants">Pour Enfants</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="evenement.html" class="dropbtn">
+                            <i class="fas fa-calendar-alt"></i> Événement
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="evenement.html#festivals">Festivals</a>
+                            <a href="evenement.html#concerts">Concerts</a>
+                            <a href="evenement.html#expositions">Expositions</a>
+                            <a href="evenement.html#sports-events">Événements Sportifs</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="shopping.html" class="dropbtn">
+                            <i class="fas fa-shopping-bag"></i> Shopping
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="shopping.html#centres">Centres Commerciaux</a>
+                            <a href="shopping.html#boutiques">Boutiques</a>
+                            <a href="shopping.html#marches">Marchés</a>
+                            <a href="shopping.html#artisanat">Artisanat Local</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1600') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Activités & Loisirs</h1>
+            <p class="hero-subtitle">Sports, nature et détente à Nancy</p>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Activités Sportives</h2>
+                <p>Bougez et restez actif à Nancy</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/thermes.jpeg" alt="Piscine">
+                        <span class="tag">Aquatique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Piscine Nancy-Thermal</h3>
+                        <p class="card-description">
+                            Centre aquatique moderne avec bassins olympiques, toboggan, spa et espace bien-être. Cours d'aquagym disponibles.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-swimming-pool"></i> Natation</span>
+                            <span><i class="fas fa-clock"></i> 6h-22h</span>
+                            <span><i class="fas fa-euro-sign"></i> 4.50€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/pep.jpeg" alt="Course à pied">
+                        <span class="tag">Running</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Parcours Running Pépinière</h3>
+                        <p class="card-description">
+                            Circuit de 5km balisé dans le parc de la Pépinière. Parfait pour le jogging matinal avec ses allées ombragées.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-running"></i> 5 km</span>
+                            <span><i class="fas fa-tree"></i> Nature</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Parcours</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/basicfit.png" alt="Fitness">
+                        <span class="tag">Fitness</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Basic Fit Nancy Centre</h3>
+                        <p class="card-description">
+                            Salle de sport équipée avec machines cardio, musculation, cours collectifs et espace stretching. Ouvert 24/7.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-dumbbell"></i> Musculation</span>
+                            <span><i class="fas fa-users"></i> Cours collectifs</span>
+                            <span><i class="fas fa-euro-sign"></i> Dès 19.99€/mois</span>
+                        </div>
+                        <a href="#" class="btn-primary">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/climbup.jpg" alt="Escalade">
+                        <span class="tag">Escalade</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Climb Up Nancy</h3>
+                        <p class="card-description">
+                            Salle d'escalade indoor de 1500m² avec murs de bloc, voies, surplombs. Cours pour débutants et confirmés.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-mountain"></i> Bloc & Voies</span>
+                            <span><i class="fas fa-graduation-cap"></i> Cours</span>
+                            <span><i class="fas fa-euro-sign"></i> 15€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Grimper</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/velostan.jpeg" alt="Vélo">
+                        <span class="tag">Cyclisme</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Vélostan Nancy</h3>
+                        <p class="card-description">
+                            Service de location de vélos en libre-service. Plus de 30 stations dans toute la métropole nancéienne.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-bicycle"></i> Vélos classiques</span>
+                            <span><i class="fas fa-bolt"></i> Vélos électriques</span>
+                            <span><i class="fas fa-euro-sign"></i> 1€/30min</span>
+                        </div>
+                        <a href="#" class="btn-primary">Louer</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/yoga.jpg" alt="Yoga">
+                        <span class="tag">Bien-être</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Studio Yoga Ishan</h3>
+                        <p class="card-description">
+                            Studio de yoga chaleureux proposant différents styles : Hatha, Vinyasa, Yin yoga. Cours pour tous niveaux.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-spa"></i> Yoga & Méditation</span>
+                            <span><i class="fas fa-heart"></i> Détente</span>
+                            <span><i class="fas fa-euro-sign"></i> 18€/séance</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nature Section -->
+    <section id="nature" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nature & Espaces Verts</h2>
+                <p>Détente et promenades au vert</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/pep.jpeg" alt="Parc de la Pépinière">
+                        <span class="tag">Parc Urbain</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Parc de la Pépinière</h3>
+                        <p class="card-description">
+                            Le poumon vert de Nancy. 21 hectares de jardins à la française, roseraie, kiosque à musique et mini-zoo gratuit.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-tree"></i> 21 hectares</span>
+                            <span><i class="fas fa-paw"></i> Mini-zoo</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/parcsaintemarie.jpeg" alt="Parc Sainte-Marie">
+                        <span class="tag">Romantique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Parc Sainte-Marie</h3>
+                        <p class="card-description">
+                            Parc paysager de 7 hectares avec étang, cascade, passerelle suspendue et jardin à l'anglaise. Idéal pour pique-niquer.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-water"></i> Étang</span>
+                            <span><i class="fas fa-bread-slice"></i> Aires pique-nique</span>
+                            <span><i class="fas fa-dog"></i> Chiens acceptés</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visiter</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800" alt="Forêt de Haye">
+                        <span class="tag">Randonnée</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Forêt de Haye</h3>
+                        <p class="card-description">
+                            Vaste forêt de 9000 hectares aux portes de Nancy. Sentiers balisés, VTT, équitation et aire de pique-nique.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-hiking"></i> Randonnées</span>
+                            <span><i class="fas fa-biking"></i> VTT</span>
+                            <span><i class="fas fa-horse"></i> Équitation</span>
+                        </div>
+                        <a href="#" class="btn-primary">Sentiers</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/jbjeanmarie.jpg" alt="Jardin Botanique">
+                        <span class="tag">Botanique</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jardin Botanique</h3>
+                        <p class="card-description">
+                            35 hectares de collections végétales du monde entier. Serres tropicales, jardin alpin et jardin écologique.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-leaf"></i> 12 000 espèces</span>
+                            <span><i class="fas fa-sun"></i> Serres tropicales</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Explorer</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/lacmadine.jpg" alt="Base de Loisirs">
+                        <span class="tag">Loisirs Nautiques</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lac de la Madine</h3>
+                        <p class="card-description">
+                            À 40 min de Nancy, base nautique avec voile, paddle, pédalo. Plage aménagée, baignade surveillée en été.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-water"></i> Sports nautiques</span>
+                            <span><i class="fas fa-umbrella-beach"></i> Plage</span>
+                            <span><i class="fas fa-car"></i> 40 min</span>
+                        </div>
+                        <a href="#" class="btn-primary">Infos</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/veloroute.jpg" alt="Canal de la Marne au Rhin">
+                        <span class="tag">Balade</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Véloroute Canal</h3>
+                        <p class="card-description">
+                            Piste cyclable le long du canal de la Marne au Rhin. Itinéraire plat et sécurisé de 30 km.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-bicycle"></i> Piste cyclable</span>
+                            <span><i class="fas fa-child"></i> Famille</span>
+                            <span><i class="fas fa-route"></i> 30 km</span>
+                        </div>
+                        <a href="#" class="btn-primary">Parcours</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loisirs Section -->
+    <section id="loisirs" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loisirs & Divertissements</h2>
+                <p>Pour tous les âges et toutes les envies</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800" alt="Cinéma">
+                        <div class="highlight-badge">Cinéma</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Kinepolis Nancy</h3>
+                        <p>
+                            Multiplexe de 16 salles dont IMAX et 4DX. Films en version originale, soirées événements et avant-premières régulières.
+                        </p>
+                        <a href="#" class="btn-link">Séances <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Bowling">
+                        <div class="highlight-badge">Bowling</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Bowling Nancy Thermal</h3>
+                        <p>
+                            24 pistes de bowling, billards, karaoké et espace bar-restaurant. Soirées à thème et tarifs réduits en semaine.
+                        </p>
+                        <a href="#" class="btn-link">Réserver <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800" alt="Laser Game">
+                        <div class="highlight-badge">Action</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Laser Game Evolution</h3>
+                        <p>
+                            Arène high-tech de 600m² sur 2 niveaux. Effets spéciaux, brouillard et musique. Idéal pour les groupes et anniversaires.
+                        </p>
+                        <a href="#" class="btn-link">Jouer <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Escape Game">
+                        <div class="highlight-badge">Énigmes</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Escape Hunt Nancy</h3>
+                        <p>
+                            6 salles thématiques avec énigmes immersives. De 2 à 6 joueurs, difficulté variable. Réservation en ligne recommandée.
+                        </p>
+                        <a href="#" class="btn-link">S'échapper <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1571943072419-c0290e0074c0?w=800" alt="Karting">
+                        <div class="highlight-badge">Vitesse</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Indoor Kart Nancy</h3>
+                        <p>
+                            Circuit indoor de 800m avec karts électriques ultra-performants. Chronométrage automatique et classements en temps réel.
+                        </p>
+                        <a href="#" class="btn-link">Rouler <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800" alt="Trampoline">
+                        <div class="highlight-badge">Jump</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Jump XL Nancy</h3>
+                        <p>
+                            Parc de trampolines indoor de 2000m². Freestyle, dodgeball, ninja warrior et foam pit. Fun garanti pour toute la famille!
+                        </p>
+                        <a href="#" class="btn-link">Sauter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enfants Section -->
+    <section id="enfants" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Activités pour Enfants</h2>
+                <p>Sorties familiales et découvertes ludiques</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800" alt="Zoo">
+                        <span class="tag">Animaux</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zoo d'Amnéville</h3>
+                        <p class="card-description">
+                            L'un des plus beaux zoos de France à 45 min de Nancy. Plus de 2000 animaux, spectacles d'otaries et vivarium tropical.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-paw"></i> 2000 animaux</span>
+                            <span><i class="fas fa-child"></i> Aire de jeux</span>
+                            <span><i class="fas fa-euro-sign"></i> 32€ adulte</span>
+                        </div>
+                        <a href="#" class="btn-primary">Billetterie</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800" alt="Muséum">
+                        <span class="tag">Éducatif</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Muséum-Aquarium</h3>
+                        <p class="card-description">
+                            Aquarium tropical, vivarium avec serpents, crocodiles et tortues. Collections de taxidermie fascinantes pour les enfants.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-fish"></i> Aquarium</span>
+                            <span><i class="fas fa-frog"></i> Vivarium</span>
+                            <span><i class="fas fa-euro-sign"></i> 5€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visiter</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1576859161620-bd0dd9842e5e?w=800" alt="Parc de jeux">
+                        <span class="tag">Jeux</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Funny Park</h3>
+                        <p class="card-description">
+                            Parc de jeux indoor climatisé. Structures gonflables géantes, toboggans, trampolines. Cafétéria pour les parents.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-child"></i> 0-12 ans</span>
+                            <span><i class="fas fa-birthday-cake"></i> Anniversaires</span>
+                            <span><i class="fas fa-euro-sign"></i> 8€</span>
+                        </div>
+                        <a href="#" class="btn-primary">S'amuser</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800" alt="Bibliothèque">
+                        <span class="tag">Lecture</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Médiathèque Manufacture</h3>
+                        <p class="card-description">
+                            Espace jeunesse avec milliers de livres, BD, jeux vidéo. Animations hebdomadaires: contes, ateliers créatifs.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-book"></i> Livres & BD</span>
+                            <span><i class="fas fa-gamepad"></i> Jeux vidéo</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Programme</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?w=800" alt="Patinoire">
+                        <span class="tag">Glisse</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Patinoire Iceberg</h3>
+                        <p class="card-description">
+                            Patinoire olympique couverte. Sessions publiques, cours de patinage et hockey. Location de patins sur place.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-skating"></i> Patinage</span>
+                            <span><i class="fas fa-snowflake"></i> Toute l'année</span>
+                            <span><i class="fas fa-euro-sign"></i> 5.50€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Horaires</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=800" alt="Ferme pédagogique">
+                        <span class="tag">Nature</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Ferme de Pixérécourt</h3>
+                        <p class="card-description">
+                            Ferme pédagogique à 15 min de Nancy. Rencontre avec les animaux, atelier traite, fabrication de fromage. Vente directe.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-horse-head"></i> Animaux de ferme</span>
+                            <span><i class="fas fa-graduation-cap"></i> Pédagogique</span>
+                            <span><i class="fas fa-euro-sign"></i> 6€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Restez Actif</h2>
+                <p>Recevez nos suggestions d'activités et événements sportifs chaque semaine</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stanis'Trip</h3>
+                    <p>Votre guide complet pour découvrir Nancy et ses trésors cachés.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="nourriture.html">Nourriture</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activite.html">Activité</a></li>
+                        <li><a href="evenement.html">Événement</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@stanistrip.fr</li>
+                        <li><i class="fas fa-phone"></i> +33 3 83 XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nancy, France</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stanis'Trip. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

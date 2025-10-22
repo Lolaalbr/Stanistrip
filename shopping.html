@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping - Stanis'Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Stanis'Trip Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <div class="dropdown">
+                        <a href="nourriture.html" class="dropbtn">
+                            <i class="fas fa-utensils"></i> Nourriture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="nourriture.html#restaurants">Restaurants</a>
+                            <a href="nourriture.html#bars">Bars</a>
+                            <a href="nourriture.html#cafes">Cafés</a>
+                            <a href="nourriture.html#gastronomie">Gastronomie Locale</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="culture.html" class="dropbtn">
+                            <i class="fas fa-landmark"></i> Culture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="culture.html#monuments">Monuments</a>
+                            <a href="culture.html#musees">Musées</a>
+                            <a href="culture.html#architecture">Architecture</a>
+                            <a href="culture.html#histoire">Histoire</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="activite.html" class="dropbtn">
+                            <i class="fas fa-running"></i> Activité
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="activite.html#sports">Sports</a>
+                            <a href="activite.html#nature">Nature</a>
+                            <a href="activite.html#loisirs">Loisirs</a>
+                            <a href="activite.html#enfants">Pour Enfants</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="evenement.html" class="dropbtn">
+                            <i class="fas fa-calendar-alt"></i> Événement
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="evenement.html#festivals">Festivals</a>
+                            <a href="evenement.html#concerts">Concerts</a>
+                            <a href="evenement.html#expositions">Expositions</a>
+                            <a href="evenement.html#sports-events">Événements Sportifs</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="shopping.html" class="dropbtn">
+                            <i class="fas fa-shopping-bag"></i> Shopping
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#centres">Centres Commerciaux</a>
+                            <a href="#boutiques">Boutiques</a>
+                            <a href="#marches">Marchés</a>
+                            <a href="#artisanat">Artisanat Local</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Shopping à Nancy</h1>
+            <p class="hero-subtitle">Centres commerciaux, boutiques de créateurs et marchés locaux</p>
+        </div>
+    </section>
+
+    <!-- Shopping Districts Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quartiers Commerçants</h2>
+                <p>Les meilleurs spots shopping de Nancy</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800" alt="Centre-ville">
+                        <div class="highlight-badge">Premium</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Centre-Ville Piétonnier</h3>
+                        <p>
+                            Le cœur commerçant de Nancy avec ses rues piétonnes élégantes. Grandes enseignes, boutiques de mode, librairies et concept stores.
+                        </p>
+                        <div class="info-tags">
+                            <span><i class="fas fa-store"></i> 200+ boutiques</span>
+                            <span><i class="fas fa-walking"></i> Zone piétonne</span>
+                            <span><i class="fas fa-parking"></i> Parkings à proximité</span>
+                        </div>
+                        <div class="feature-list">
+                            <h4>Points d'intérêt :</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Rue Saint-Jean (grandes enseignes)</li>
+                                <li><i class="fas fa-check"></i> Rue des Dominicains (mode)</li>
+                                <li><i class="fas fa-check"></i> Rue Stanislas (luxe)</li>
+                                <li><i class="fas fa-check"></i> Place Saint-Epvre (terrasses)</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-primary">Plan interactif</a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1567958451986-2de427a4a0be?w=800" alt="Saint-Sébastien">
+                        <div class="highlight-badge">Tendance</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Quartier Saint-Sébastien</h3>
+                        <p>
+                            Le quartier branché et artistique de Nancy. Boutiques vintage, friperies, galeries d'art, concept stores et ateliers de créateurs.
+                        </p>
+                        <div class="info-tags">
+                            <span><i class="fas fa-palette"></i> Art & Design</span>
+                            <span><i class="fas fa-recycle"></i> Vintage</span>
+                            <span><i class="fas fa-coffee"></i> Cafés branchés</span>
+                        </div>
+                        <div class="feature-list">
+                            <h4>À découvrir :</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Friperies et boutiques vintage</li>
+                                <li><i class="fas fa-check"></i> Galeries d'art contemporain</li>
+                                <li><i class="fas fa-check"></i> Ateliers de créateurs</li>
+                                <li><i class="fas fa-check"></i> Boutiques de déco</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-primary">Explorer le quartier</a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1519167758810-codedcf71e7a?w=800" alt="Vieille Ville">
+                        <div class="highlight-badge">Authentique</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Grande Rue - Vieille Ville</h3>
+                        <p>
+                            La rue historique de Nancy avec ses façades médiévales. Antiquaires, librairies anciennes, boutiques d'artisanat et épiceries fines.
+                        </p>
+                        <div class="info-tags">
+                            <span><i class="fas fa-landmark"></i> Historique</span>
+                            <span><i class="fas fa-book"></i> Antiquités</span>
+                            <span><i class="fas fa-gift"></i> Artisanat</span>
+                        </div>
+                        <div class="feature-list">
+                            <h4>Spécialités :</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Antiquaires et brocanteurs</li>
+                                <li><i class="fas fa-check"></i> Librairies spécialisées</li>
+                                <li><i class="fas fa-check"></i> Maisons de thé</li>
+                                <li><i class="fas fa-check"></i> Chocolatiers artisanaux</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-primary">Parcours guidé</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Centers Section -->
+    <section id="centres" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Centres Commerciaux</h2>
+                <p>Shopping sous un même toit</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800" alt="Saint-Sébastien Shopping">
+                        <span class="tag">CENTRE-VILLE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Centre Commercial Saint-Sébastien</h3>
+                        <p class="card-description">
+                            Centre commercial moderne en plein cœur de Nancy. 80 boutiques de mode, beauté, high-tech et restauration rapide.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-store"></i> 80 enseignes</span>
+                            <span><i class="fas fa-clock"></i> 9h-20h</span>
+                            <span><i class="fas fa-parking"></i> Parking 400 places</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Enseignes phares :</strong> Fnac, Zara, H&M, Sephora, Cultura</p>
+                        </div>
+                        <a href="#" class="btn-primary">Voir toutes les enseignes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800" alt="Pôle Saint-Jacques">
+                        <span class="tag">HYPERMARCHÉ</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pôle Saint-Jacques</h3>
+                        <p class="card-description">
+                            Grand complexe commercial avec hypermarché Auchan et galerie marchande. Idéal pour les courses du quotidien et shopping mode.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-shopping-cart"></i> Hypermarché</span>
+                            <span><i class="fas fa-clock"></i> 8h30-21h</span>
+                            <span><i class="fas fa-parking"></i> Parking gratuit</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Services :</strong> Auchan, Kiabi, Décathlon, Darty, restaurants</p>
+                        </div>
+                        <a href="#" class="btn-primary">Infos pratiques</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800" alt="Nancy Houdemont">
+                        <span class="tag">ZONE COMMERCIALE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Zone d'Houdemont</h3>
+                        <p class="card-description">
+                            Plus grande zone commerciale de l'agglomération. Enseignes spécialisées en ameublement, bricolage, sport et électroménager.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-store"></i> 40+ magasins</span>
+                            <span><i class="fas fa-couch"></i> Ameublement</span>
+                            <span><i class="fas fa-car"></i> Accès facile</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Magasins :</strong> Ikea, Leroy Merlin, Boulanger, Intersport, BUT</p>
+                        </div>
+                        <a href="#" class="btn-primary">Plan d'accès</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1567958451986-2de427a4a0be?w=800" alt="Les Portes de Nancy">
+                        <span class="tag">NOUVEAU</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Les Portes de Nancy - Laxou</h3>
+                        <p class="card-description">
+                            Centre commercial moderne avec cinéma multiplexe. Mode, beauté, loisirs et espace restauration avec terrasse panoramique.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-store"></i> 60 boutiques</span>
+                            <span><i class="fas fa-film"></i> Cinéma UGC</span>
+                            <span><i class="fas fa-utensils"></i> Food court</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Loisirs :</strong> UGC Ciné Cité, salle de sport, restaurants</p>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800" alt="Magasins Point du Jour">
+                        <span class="tag">QUARTIER</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Magasins du Plateau</h3>
+                        <p class="card-description">
+                            Centre commercial de proximité dans le quartier du Plateau. Supermarché, boulangeries, pharmacies et commerces de proximité.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-home"></i> Proximité</span>
+                            <span><i class="fas fa-clock"></i> 7h-21h</span>
+                            <span><i class="fas fa-bread-slice"></i> Commerces</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Services :</strong> Monoprix, pharmacie, pressing, boulangeries</p>
+                        </div>
+                        <a href="#" class="btn-primary">Voir les commerces</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=800" alt="Nancy Lobau">
+                        <span class="tag">SPÉCIALISÉ</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Retail Park Nancy-Sud</h3>
+                        <p class="card-description">
+                            Parc commercial avec magasins spécialisés. Électroménager, bricolage, jardinerie, animalerie et équipement de la maison.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-tools"></i> Bricolage</span>
+                            <span><i class="fas fa-seedling"></i> Jardinerie</span>
+                            <span><i class="fas fa-paw"></i> Animalerie</span>
+                        </div>
+                        <div class="store-highlights">
+                            <p><strong>Enseignes :</strong> Castorama, Jardiland, Maxi Zoo, Gifi</p>
+                        </div>
+                        <a href="#" class="btn-primary">Horaires & accès</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Boutiques Section -->
+    <section id="boutiques" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Boutiques & Concept Stores</h2>
+                <p>Adresses uniques et créateurs locaux</p>
+            </div>
+            
+            <div class="boutique-categories">
+                <div class="category-section">
+                    <h3><i class="fas fa-tshirt"></i> Mode & Accessoires</h3>
+                    <div class="boutique-list">
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>L'Atelier 1802</h4>
+                                <p>Boutique de créateurs français. Vêtements éthiques, accessoires uniques et marques confidentielles.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 23 Rue Saint-Dizier</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Créateurs</span>
+                                <span class="btag">Éthique</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>La Garde-Robe de Violette</h4>
+                                <p>Friperie vintage haut de gamme. Sélection pointue de pièces des années 60 à 90, accessoires rétro.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 15 Rue Saint-Jean</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Vintage</span>
+                                <span class="btag">Seconde main</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Maison Goyard - Nancy</h4>
+                                <p>Maroquinerie de luxe française depuis 1853. Sacs, bagages et accessoires personnalisables.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 8 Place Stanislas</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Luxe</span>
+                                <span class="btag">Maroquinerie</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Sneakers Paradise</h4>
+                                <p>Boutique spécialisée sneakers. Éditions limitées, modèles rares et dernières sorties Nike, Adidas, Jordan.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 42 Rue Saint-Jean</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Sneakers</span>
+                                <span class="btag">Streetwear</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3><i class="fas fa-home"></i> Décoration & Mobilier</h3>
+                    <div class="boutique-list">
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Concept Store 54</h4>
+                                <p>Design et décoration contemporaine. Mobilier scandinave, objets design et créations artisanales.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 18 Rue des Carmes</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Design</span>
+                                <span class="btag">Scandinave</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Brocante Chic</h4>
+                                <p>Meubles anciens et objets vintage. Mobilier restauré, luminaires rétro et curiosités déco.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 67 Grande Rue</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Antiquités</span>
+                                <span class="btag">Vintage</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Atelier Gallé Daum</h4>
+                                <p>Verrerie d'art Art Nouveau. Lampes, vases et objets décoratifs dans la tradition de l'École de Nancy.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 12 Rue de la Faïencerie</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Art Nouveau</span>
+                                <span class="btag">Cristallerie</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Green Plant</h4>
+                                <p>Plantes d'intérieur et accessoires déco végétale. Cactus, succulentes, pots design et terrariums.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 5 Rue Saint-Dizier</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Plantes</span>
+                                <span class="btag">Écolo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-section">
+                    <h3><i class="fas fa-book"></i> Librairies & Culture</h3>
+                    <div class="boutique-list">
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Librairie Préface</h4>
+                                <p>Librairie indépendante historique. Grande sélection littéraire, rencontres d'auteurs et conseils personnalisés.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 30 Rue Gambetta</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Indépendante</span>
+                                <span class="btag">Littérature</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Fugue - Musique & Vinyles</h4>
+                                <p>Disquaire spécialisé. Vinyles neufs et occasion, CD, K7 et accessoires audio. Tous styles musicaux.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 14 Rue Saint-Dizier</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Vinyles</span>
+                                <span class="btag">Musique</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>BD & Comics Corner</h4>
+                                <p>Boutique spécialisée BD, comics et mangas. Nouveautés, séries cultes et éditions collector.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 8 Rue de la Primatiale</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">BD</span>
+                                <span class="btag">Comics</span>
+                            </div>
+                        </div>
+
+                        <div class="boutique-item">
+                            <div class="boutique-info">
+                                <h4>Galerie Art & You</h4>
+                                <p>Galerie d'art contemporain. Expositions mensuelles, œuvres d'artistes locaux et internationaux.</p>
+                                <span class="boutique-address"><i class="fas fa-map-marker-alt"></i> 25 Rue Saint-Jean</span>
+                            </div>
+                            <div class="boutique-tags">
+                                <span class="btag">Art</span>
+                                <span class="btag">Galerie</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Markets Section -->
+    <section id="marches" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Marchés de Nancy</h2>
+                <p>Produits frais, artisanat et brocantes</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800" alt="Marché Central">
+                        <span class="tag">QUOTIDIEN</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché Central Couvert</h3>
+                        <p class="card-description">
+                            Marché couvert historique au cœur de Nancy. 50 commerçants proposant produits frais, fromages, viandes, poissons et spécialités locales.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Mar-Sam</span>
+                            <span><i class="fas fa-clock"></i> 7h-13h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Place Henri Mengin</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>À découvrir :</strong> Primeurs bio, poissonnerie, fromagerie, charcuterie artisanale</p>
+                        </div>
+                        <a href="#" class="btn-primary">Voir les commerçants</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" alt="Marché bio">
+                        <span class="tag">BIO</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché Bio Place Stanislas</h3>
+                        <p class="card-description">
+                            Marché 100% biologique sur la plus belle place de France. Producteurs locaux, légumes de saison, pain bio et produits naturels.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Jeudi & Samedi</span>
+                            <span><i class="fas fa-clock"></i> 8h-13h</span>
+                            <span><i class="fas fa-leaf"></i> 100% Bio</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>Spécialités :</strong> Légumes bio, œufs fermiers, miels artisanaux, cosmétiques naturels</p>
+                        </div>
+                        <a href="#" class="btn-primary">Producteurs</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1533900298318-6b8da08a523e?w=800" alt="Brocante">
+                        <span class="tag">ANTIQUITÉS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Brocante de la Vieille Ville</h3>
+                        <p class="card-description">
+                            Marché aux puces et brocante tous les dimanches. Antiquités, objets vintage, livres anciens, vaisselle et meubles d'époque.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Dimanche</span>
+                            <span><i class="fas fa-clock"></i> 6h-14h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Grande Rue</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>Trouvailles :</strong> Meubles anciens, objets Art Nouveau, vinyles, livres rares</p>
+                        </div>
+                        <a href="#" class="btn-primary">Infos pratiques</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=800" alt="Marché de Noël">
+                        <span class="tag">SAISONNIER</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché de Noël</h3>
+                        <p class="card-description">
+                            L'un des plus beaux marchés de Noël de France. 120 chalets, artisanat, gastronomie, vin chaud et ambiance féerique.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> 22 Nov - 30 Déc</span>
+                            <span><i class="fas fa-clock"></i> 11h-20h</span>
+                            <span><i class="fas fa-candy-cane"></i> 120 chalets</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>Animations :</strong> Grande roue, patinoire, manège, concerts, spectacles</p>
+                        </div>
+                        <a href="#" class="btn-primary">Programme</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1573246123716-6b1782bfc499?w=800" alt="Marché artisanal">
+                        <span class="tag">ARTISANAT</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché des Créateurs</h3>
+                        <p class="card-description">
+                            Marché mensuel d'artisans et créateurs locaux. Bijoux faits main, céramique, maroquinerie, vêtements et objets déco.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> 1er dimanche/mois</span>
+                            <span><i class="fas fa-clock"></i> 10h-18h</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Place Charles III</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>Créateurs :</strong> 40 stands, démonstrations, ateliers participatifs</p>
+                        </div>
+                        <a href="#" class="btn-primary">Prochaines dates</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=800" alt="Marché fermier">
+                        <span class="tag">PRODUCTEURS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Marché des Producteurs Locaux</h3>
+                        <p class="card-description">
+                            Circuit court et produits du terroir lorrain. Agriculteurs et éleveurs vendent directement leurs productions.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Mercredi</span>
+                            <span><i class="fas fa-clock"></i> 16h-19h30</span>
+                            <span><i class="fas fa-tractor"></i> Producteurs locaux</span>
+                        </div>
+                        <div class="market-highlights">
+                            <p><strong>Produits :</strong> Légumes, viandes, fromages, œufs, miel, confitures maison</p>
+                        </div>
+                        <a href="#" class="btn-primary">Liste producteurs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Crafts Section -->
+    <section id="artisanat" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Artisanat Local & Souvenirs</h2>
+                <p>Savoir-faire lorrain et créations uniques</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800" alt="Cristallerie">
+                        <div class="highlight-badge">Prestige</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Cristallerie Daum</h3>
+                        <p>
+                            Manufacture prestigieuse fondée en 1878. Visite des ateliers, démonstrations de soufflage de verre et boutique avec pièces uniques.
+                        </p>
+                        <div class="craft-specialties">
+                            <h4>Spécialités :</h4>
+                            <ul>
+                                <li><i class="fas fa-gem"></i> Vases et sculptures en cristal</li>
+                                <li><i class="fas fa-lightbulb"></i> Lampes Art Nouveau</li>
+                                <li><i class="fas fa-ring"></i> Bijoux en pâte de verre</li>
+                                <li><i class="fas fa-certificate"></i> Pièces de collection</li>
+                            </ul>
+                        </div>
+                        <div class="info-tags">
+                            <span><i class="fas fa-euro-sign"></i> 50€ à 50 000€</span>
+                            <span><i class="fas fa-users"></i> Visites guidées</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver une visite</a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1519987684408-3e1f308684f9?w=800" alt="Bergamote">
+                        <div class="highlight-badge">Tradition</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Maison des Sœurs Macarons</h3>
+                        <p>
+                            Institution nancéienne depuis 1793. Macarons de Nancy authentiques fabriqués selon la recette originale des sœurs du Saint-Sacrement.
+                        </p>
+                        <div class="craft-specialties">
+                            <h4>Spécialités :</h4>
+                            <ul>
+                                <li><i class="fas fa-cookie"></i> Macarons de Nancy originaux</li>
+                                <li><i class="fas fa-lemon"></i> Bergamotes confiserie</li>
+                                <li><i class="fas fa-candy-cane"></i> Mirabelles cristallisées</li>
+                                <li><i class="fas fa-gift"></i> Coffrets cadeaux</li>
+                            </ul>
+                        </div>
+                        <div class="info-tags">
+                            <span><i class="fas fa-euro-sign"></i> Dès 5€</span>
+                            <span><i class="fas fa-clock"></i> Lun-Sam: 9h-19h</span>
+                        </div>
+                        <a href="#" class="btn-primary">Boutique en ligne</a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1565362904282-6c7c2fcc158f?w=800" alt="Ébénisterie">
+                        <div class="highlight-badge">Artisan</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Ateliers d'Art de Nancy</h3>
+                        <p>
+                            Regroupement d'artisans d'art perpétuant le savoir-faire de l'École de Nancy. Meubles, vitraux, ferronnerie et ébénisterie.
+                        </p>
+                        <div class="craft-specialties">
+                            <h4>Métiers d'art :</h4>
+                            <ul>
+                                <li><i class="fas fa-couch"></i> Meubles Art Nouveau sur mesure</li>
+                                <li><i class="fas fa-paint-brush"></i> Vitraux et émaux</li>
+                                <li><i class="fas fa-hammer"></i> Ferronnerie d'art</li>
+                                <li><i class="fas fa-palette"></i> Restauration de meubles anciens</li>
+                            </ul>
+                        </div>
+                        <div class="info-tags">
+                            <span><i class="fas fa-tools"></i> Sur mesure</span>
+                            <span><i class="fas fa-calendar"></i> Sur RDV</span>
+                        </div>
+                        <a href="#" class="btn-primary">Prendre RDV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="souvenir-grid">
+                <h3 style="text-align: center; margin: 3rem 0 2rem;">Souvenirs Typiques de Nancy</h3>
+                <div class="souvenir-items">
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <h4>Bergamotes de Nancy</h4>
+                        <p>Bonbons parfumés à la bergamote, spécialité créée au XVIIIe siècle. Boîtes métalliques vintage.</p>
+                        <span class="price">À partir de 6€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-cake"></i>
+                        </div>
+                        <h4>Macarons de Nancy</h4>
+                        <p>Petits gâteaux moelleux aux amandes, recette ancestrale. Parfaits pour offrir.</p>
+                        <span class="price">À partir de 8€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-glass-whiskey"></i>
+                        </div>
+                        <h4>Mirabelle de Lorraine</h4>
+                        <p>Eau-de-vie, liqueur ou confiture de mirabelle. IGP garantie.</p>
+                        <span class="price">À partir de 15€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h4>Articles Place Stanislas</h4>
+                        <p>Mugs, magnets, cartes postales et affiches vintage de la Place Stanislas.</p>
+                        <span class="price">À partir de 3€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-chess-rook"></i>
+                        </div>
+                        <h4>Objets Art Nouveau</h4>
+                        <p>Reproductions d'œuvres de l'École de Nancy: vases, lampes, bijoux.</p>
+                        <span class="price">À partir de 20€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h4>Livres & Guides</h4>
+                        <p>Beaux livres sur Nancy, Art Nouveau, recettes lorraines et guides historiques.</p>
+                        <span class="price">À partir de 10€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h4>Textile "Nancy"</h4>
+                        <p>T-shirts, sweats et tote bags avec motifs Art Nouveau et slogans nancéiens.</p>
+                        <span class="price">À partir de 15€</span>
+                    </div>
+
+                    <div class="souvenir-card">
+                        <div class="souvenir-icon">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h4>Produits du Terroir</h4>
+                        <p>Confiture de mirabelle, miel lorrain, moutarde de Meaux, pâtés locaux.</p>
+                        <span class="price">À partir de 7€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Tips Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Infos Pratiques</h2>
+                <p>Tout pour faciliter votre shopping à Nancy</p>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-parking"></i>
+                    </div>
+                    <h3>Parkings Centre-Ville</h3>
+                    <ul class="tip-list">
+                        <li><strong>Parking Stanislas</strong> - 800 places - Centre historique</li>
+                        <li><strong>Parking Thiers</strong> - 650 places - Zone piétonne</li>
+                        <li><strong>Parking Vaudémont</strong> - 450 places - Près des commerces</li>
+                        <li><strong>Tarifs :</strong> 2€/h - Forfait journée: 15€</li>
+                    </ul>
+                    <a href="#" class="btn-link">Tous les parkings <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horaires d'Ouverture</h3>
+                    <ul class="tip-list">
+                        <li><strong>Lundi:</strong> 14h-19h (nombreuses fermetures)</li>
+                        <li><strong>Mardi-Samedi:</strong> 10h-19h</li>
+                        <li><strong>Dimanche:</strong> Fermé (sauf Noël et soldes)</li>
+                        <li><strong>Nocturnes:</strong> Jeudi jusqu'à 21h en centre-ville</li>
+                    </ul>
+                    <a href="#" class="btn-link">Calendrier commercial <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-percent"></i>
+                    </div>
+                    <h3>Soldes & Promotions</h3>
+                    <ul class="tip-list">
+                        <li><strong>Soldes d'hiver:</strong> Mi-janvier - Mi-février</li>
+                        <li><strong>Soldes d'été:</strong> Fin juin - Fin juillet</li>
+                        <li><strong>Black Friday:</strong> Dernier vendredi de novembre</li>
+                        <li><strong>Braderies:</strong> Septembre et Mars</li>
+                    </ul>
+                    <a href="#" class="btn-link">Dates à retenir <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Moyens de Paiement</h3>
+                    <ul class="tip-list">
+                        <li><strong>CB:</strong> Acceptée partout (min. parfois requis)</li>
+                        <li><strong>Espèces:</strong> Toujours utile pour les marchés</li>
+                        <li><strong>Paiement mobile:</strong> Apple Pay, Google Pay</li>
+                        <li><strong>Chèques Vacances:</strong> Acceptés dans grands magasins</li>
+                    </ul>
+                    <a href="#" class="btn-link">Détaxe touristes <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stanis'Trip</h3>
+                    <p>Votre guide complet pour découvrir Nancy et ses trésors cachés.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="nourriture.html">Nourriture</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activite.html">Activité</a></li>
+                        <li><a href="evenement.html">Événement</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@stanistrip.fr</li>
+                        <li><i class="fas fa-phone"></i> +33 3 83 XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nancy, France</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stanis'Trip. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

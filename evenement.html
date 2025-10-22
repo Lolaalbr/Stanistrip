@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Événements - Stanis'Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Stanis'Trip Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <div class="dropdown">
+                        <a href="nourriture.html" class="dropbtn">
+                            <i class="fas fa-utensils"></i> Nourriture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="nourriture.html#restaurants">Restaurants</a>
+                            <a href="nourriture.html#bars">Bars</a>
+                            <a href="nourriture.html#cafes">Cafés</a>
+                            <a href="nourriture.html#gastronomie">Gastronomie Locale</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="culture.html" class="dropbtn">
+                            <i class="fas fa-landmark"></i> Culture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="culture.html#monuments">Monuments</a>
+                            <a href="culture.html#musees">Musées</a>
+                            <a href="culture.html#architecture">Architecture</a>
+                            <a href="culture.html#histoire">Histoire</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="activite.html" class="dropbtn">
+                            <i class="fas fa-running"></i> Activité
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="activite.html#sports">Sports</a>
+                            <a href="activite.html#nature">Nature</a>
+                            <a href="activite.html#loisirs">Loisirs</a>
+                            <a href="activite.html#enfants">Pour Enfants</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="evenement.html" class="dropbtn">
+                            <i class="fas fa-calendar-alt"></i> Événement
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#festivals">Festivals</a>
+                            <a href="#concerts">Concerts</a>
+                            <a href="#expositions">Expositions</a>
+                            <a href="#sports-events">Événements Sportifs</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="shopping.html" class="dropbtn">
+                            <i class="fas fa-shopping-bag"></i> Shopping
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="shopping.html#centres">Centres Commerciaux</a>
+                            <a href="shopping.html#boutiques">Boutiques</a>
+                            <a href="shopping.html#marches">Marchés</a>
+                            <a href="shopping.html#artisanat">Artisanat Local</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Événements à Nancy</h1>
+            <p class="hero-subtitle">Festivals, concerts et animations toute l'année</p>
+        </div>
+    </section>
+
+    <!-- Featured Events Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>À ne pas manquer</h2>
+                <p>Les événements phares de Nancy</p>
+            </div>
+            
+            <div class="featured-events">
+                <div class="featured-event-card">
+                    <div class="event-date">
+                        <span class="date-day">15-18</span>
+                        <span class="date-month">JUILLET</span>
+                    </div>
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800" alt="Nancy Jazz Pulsations">
+                        <span class="event-tag">Festival</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Nancy Jazz Pulsations</h3>
+                        <p>Le plus grand festival de jazz de l'Est de la France. 4 jours de concerts gratuits sur la Place Stanislas avec des artistes internationaux.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-map-marker-alt"></i> Place Stanislas</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                            <span><i class="fas fa-users"></i> 50 000 visiteurs</span>
+                        </div>
+                        <a href="#" class="btn-primary">Programme complet</a>
+                    </div>
+                </div>
+
+                <div class="featured-event-card">
+                    <div class="event-date">
+                        <span class="date-day">10-12</span>
+                        <span class="date-month">AOÛT</span>
+                    </div>
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800" alt="Festival des Arts de la Rue">
+                        <span class="event-tag">Arts</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Renaissance du Vieux Nancy</h3>
+                        <p>Plongez dans le XVIe siècle avec spectacles de rue, animations médiévales, artisans d'époque et banquet historique.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-map-marker-alt"></i> Vieille Ville</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                            <span><i class="fas fa-theater-masks"></i> 100+ spectacles</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="featured-event-card">
+                    <div class="event-date">
+                        <span class="date-day">22 NOV</span>
+                        <span class="date-month">30 DÉC</span>
+                    </div>
+                    <div class="event-image">
+                        <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800" alt="Marché de Noël">
+                        <span class="event-tag">Noël</span>
+                    </div>
+                    <div class="event-content">
+                        <h3>Saint-Nicolas & Marché de Noël</h3>
+                        <p>L'un des plus beaux marchés de Noël de France. 120 chalets illuminés, grande roue, patinoire et animations féeriques.</p>
+                        <div class="event-details">
+                            <span><i class="fas fa-map-marker-alt"></i> Centre-ville</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                            <span><i class="fas fa-candy-cane"></i> 120 chalets</span>
+                        </div>
+                        <a href="#" class="btn-primary">Infos pratiques</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Festivals Section -->
+    <section id="festivals" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Festivals & Événements Culturels</h2>
+                <p>Une programmation riche toute l'année</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=800" alt="Festival">
+                        <span class="tag">MAI</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Printemps des Poètes</h3>
+                        <p class="card-description">
+                            Festival national de poésie avec lectures publiques, slams, performances et rencontres avec des auteurs dans toute la ville.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Mai</span>
+                            <span><i class="fas fa-book"></i> Poésie</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">En savoir +</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1485872299829-c673f5194813?w=800" alt="Livre sur la Place">
+                        <span class="tag">SEPTEMBRE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Livre sur la Place</h3>
+                        <p class="card-description">
+                            Salon du livre incontournable. 600 auteurs, dédicaces, conférences, librairies éphémères sur la Place de la Carrière.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Septembre</span>
+                            <span><i class="fas fa-book-reader"></i> Littérature</span>
+                            <span><i class="fas fa-users"></i> 80 000 visiteurs</span>
+                        </div>
+                        <a href="#" class="btn-primary">Programme</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1598387846570-d562e27c4f7a?w=800" alt="Musique">
+                        <span class="tag">JUIN</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fête de la Musique</h3>
+                        <p class="card-description">
+                            Plus de 200 concerts gratuits dans toute la ville. Tous les styles musicaux, scènes officielles et concerts improvisés.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> 21 Juin</span>
+                            <span><i class="fas fa-music"></i> Tous styles</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Scènes</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=800" alt="Cinéma">
+                        <span class="tag">OCTOBRE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Festival du Film Fantastique</h3>
+                        <p class="card-description">
+                            Festival dédié au cinéma fantastique, SF et horreur. Avant-premières, rencontres avec réalisateurs, marathons nocturnes.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Octobre</span>
+                            <span><i class="fas fa-film"></i> 50+ films</span>
+                            <span><i class="fas fa-euro-sign"></i> 8€/séance</span>
+                        </div>
+                        <a href="#" class="btn-primary">Sélection</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800" alt="Art contemporain">
+                        <span class="tag">MAI-JUIN</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nuit des Musées</h3>
+                        <p class="card-description">
+                            Ouverture nocturne gratuite des musées avec animations spéciales, visites guidées théâtralisées et performances artistiques.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Mai</span>
+                            <span><i class="fas fa-palette"></i> 10 musées</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Détails</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800" alt="Électro">
+                        <span class="tag">NOVEMBRE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nancy Électro Shock</h3>
+                        <p class="card-description">
+                            Festival de musiques électroniques avec DJs internationaux, showcases, afterparties dans plusieurs salles de la ville.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-calendar"></i> Novembre</span>
+                            <span><i class="fas fa-compact-disc"></i> Électro</span>
+                            <span><i class="fas fa-euro-sign"></i> Pass 3 jours: 45€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Billetterie</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concerts Section -->
+    <section id="concerts" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Salles de Concert & Spectacles</h2>
+                <p>Les lieux incontournables pour vibrer</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?w=800" alt="Zénith">
+                        <div class="highlight-badge">Arena</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Zénith de Nancy</h3>
+                        <p>
+                            Salle de 10 000 places accueillant les plus grands artistes internationaux. Concerts, comédies musicales et shows.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">15 FÉV</span>
+                                <span class="mini-title">Stromae - Tournée Multitude</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">8 MARS</span>
+                                <span class="mini-title">Metallica - M72 World Tour</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">22 AVR</span>
+                                <span class="mini-title">Disney on Ice</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Toute la programmation <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=800" alt="Opéra">
+                        <div class="highlight-badge">Classique</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Opéra National de Lorraine</h3>
+                        <p>
+                            Institution prestigieuse proposant opéras, ballets, concerts symphoniques et récitals dans un écrin du XVIIIe siècle.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">20 FÉV</span>
+                                <span class="mini-title">La Traviata - Verdi</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">12 MARS</span>
+                                <span class="mini-title">Le Lac des Cygnes - Ballet</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">5 AVR</span>
+                                <span class="mini-title">Concert Philharmonique</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Saison complète <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800" alt="Salle Poirel">
+                        <div class="highlight-badge">Pluridisciplinaire</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Salle Poirel</h3>
+                        <p>
+                            Salle de 800 places au cœur de Nancy. Concerts de musique classique, jazz, chanson française et spectacles d'humour.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">18 FÉV</span>
+                                <span class="mini-title">Alain Souchon en concert</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">25 FÉV</span>
+                                <span class="mini-title">Gad Elmaleh - Stand-up</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">10 MARS</span>
+                                <span class="mini-title">Jazz Trio - Soirée clubbing</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Réserver <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=800" alt="L'Autre Canal">
+                        <div class="highlight-badge">Scène Actuelle</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>L'Autre Canal</h3>
+                        <p>
+                            Scène de musiques actuelles dédiée aux nouveaux talents et groupes émergents. Rock, électro, hip-hop, indie.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">CHAQUE MER</span>
+                                <span class="mini-title">Scène Ouverte</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">16 FÉV</span>
+                                <span class="mini-title">Soirée Hip-Hop avec Alpha Wann</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">2 MARS</span>
+                                <span class="mini-title">Tremplin Jeunes Talents</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Programme du mois <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=800" alt="Théâtre">
+                        <div class="highlight-badge">Théâtre</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Théâtre de la Manufacture</h3>
+                        <p>
+                            Centre Dramatique National proposant créations contemporaines, théâtre classique, danse et performances avant-gardistes.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">19 FÉV</span>
+                                <span class="mini-title">Cyrano de Bergerac</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">28 FÉV</span>
+                                <span class="mini-title">Danse contemporaine - Pièce chorégraphique</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">15 MARS</span>
+                                <span class="mini-title">En attendant Godot - Beckett</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Saison théâtrale <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="https://images.unsplash.com/photo-1598387181032-a3103a2db5b3?w=800" alt="Petit Casino">
+                        <div class="highlight-badge">Intimiste</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Le Petit Casino</h3>
+                        <p>
+                            Bar-concert intimiste de 150 places. Programmation éclectique: rock indé, folk, jazz manouche et chanson française.
+                        </p>
+                        <div class="event-list">
+                            <div class="mini-event">
+                                <span class="mini-date">CHAQUE JEU</span>
+                                <span class="mini-title">Jam Session Jazz</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">VEN 23 FÉV</span>
+                                <span class="mini-title">Soirée Acoustique Folk</span>
+                            </div>
+                            <div class="mini-event">
+                                <span class="mini-date">SAM 2 MARS</span>
+                                <span class="mini-title">DJ Set électro</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn-link">Cette semaine <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expositions Section -->
+    <section id="expositions" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expositions en Cours</h2>
+                <p>Découvrez l'art et la culture à Nancy</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=800" alt="Musée des Beaux-Arts">
+                        <span class="tag">JUSQU'AU 30 MARS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Caravage et les Caravagesques</h3>
+                        <p class="card-description">
+                            Exposition exceptionnelle réunissant 40 œuvres majeures du maître italien et de ses disciples. Prêts internationaux prestigieux.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Musée des Beaux-Arts</span>
+                            <span><i class="fas fa-palette"></i> Peinture baroque</span>
+                            <span><i class="fas fa-euro-sign"></i> 12€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800" alt="Art Nouveau">
+                        <span class="tag">PERMANENTE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>L'École de Nancy - Art Nouveau</h3>
+                        <p class="card-description">
+                            Collection permanente dédiée à l'Art Nouveau avec meubles, verreries, bijoux d'Émile Gallé, Daum et Louis Majorelle.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Musée de l'École de Nancy</span>
+                            <span><i class="fas fa-gem"></i> Arts décoratifs</span>
+                            <span><i class="fas fa-euro-sign"></i> 8€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visiter</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=800" alt="Photo contemporaine">
+                        <span class="tag">15 MARS - 15 MAI</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Photographies du Monde</h3>
+                        <p class="card-description">
+                            Exposition collective de photojournalisme. 200 clichés saisissants capturant l'actualité mondiale des 12 derniers mois.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Galerie Poirel</span>
+                            <span><i class="fas fa-camera"></i> Photographie</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Plus d'infos</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=800" alt="Science">
+                        <span class="tag">JUSQU'AU 30 JUIN</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Exploration Spatiale</h3>
+                        <p class="card-description">
+                            Exposition interactive sur la conquête spatiale. Maquettes de fusées, combinaisons d'astronautes et expériences ludiques.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Muséum-Aquarium</span>
+                            <span><i class="fas fa-rocket"></i> Sciences</span>
+                            <span><i class="fas fa-euro-sign"></i> 7€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01988ec?w=800" alt="Art contemporain">
+                        <span class="tag">VERNISSAGE 1ER AVR</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Biennale d'Art Contemporain</h3>
+                        <p class="card-description">
+                            30 artistes contemporains locaux et internationaux exposent peintures, sculptures et installations dans plusieurs lieux.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Divers lieux</span>
+                            <span><i class="fas fa-brush"></i> Art contemporain</span>
+                            <span><i class="fas fa-ticket-alt"></i> Pass: 15€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Parcours</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800" alt="Histoire">
+                        <span class="tag">PERMANENTE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Nancy à travers les siècles</h3>
+                        <p class="card-description">
+                            Parcours historique de la fondation de Nancy à aujourd'hui. Maquettes, objets archéologiques, vidéos immersives.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-map-marker-alt"></i> Palais Ducal</span>
+                            <span><i class="fas fa-landmark"></i> Histoire</span>
+                            <span><i class="fas fa-euro-sign"></i> 6€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sports Events Section -->
+    <section id="sports-events" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Événements Sportifs</h2>
+                <p>Soutenez les équipes locales et grands événements</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1459865264687-595d652de67e?w=800" alt="Football">
+                        <span class="tag">LIGUE 2</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>AS Nancy-Lorraine</h3>
+                        <p class="card-description">
+                            Matchs à domicile au Stade Marcel-Picot. Ambiance chaleureuse et ferveur populaire garanties. Abonnements et places disponibles.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-futbol"></i> Football</span>
+                            <span><i class="fas fa-calendar"></i> Sept-Mai</span>
+                            <span><i class="fas fa-euro-sign"></i> Dès 10€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Calendrier</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800" alt="Basketball">
+                        <span class="tag">PRO B</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>SLUC Nancy Basket</h3>
+                        <p class="card-description">
+                            Club historique de basket français. Matchs intenses à la salle Jean Weille. Animations, cheerleaders et ambiance familiale.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-basketball-ball"></i> Basketball</span>
+                            <span><i class="fas fa-calendar"></i> Oct-Juin</span>
+                            <span><i class="fas fa-euro-sign"></i> Dès 8€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Billetterie</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?w=800" alt="Hockey">
+                        <span class="tag">LIGUE MAGNUS</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Étoiles Noires de Strasbourg-Alsace</h3>
+                        <p class="card-description">
+                            Quelques matchs disputés à Nancy. Hockey sur glace de haut niveau dans une ambiance électrique. Buvette et boutique officielle.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-hockey-puck"></i> Hockey</span>
+                            <span><i class="fas fa-calendar"></i> Oct-Mars</span>
+                            <span><i class="fas fa-euro-sign"></i> 12-25€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Matchs</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?w=800" alt="Running">
+                        <span class="tag">AVRIL</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Semi-Marathon de Nancy</h3>
+                        <p class="card-description">
+                            Course mythique traversant les plus beaux quartiers de Nancy. 21 km, 10 km et courses enfants. Parcours plat et rapide.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-running"></i> Course</span>
+                            <span><i class="fas fa-users"></i> 5000 coureurs</span>
+                            <span><i class="fas fa-euro-sign"></i> 20-35€</span>
+                        </div>
+                        <a href="#" class="btn-primary">S'inscrire</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800" alt="Cyclisme">
+                        <span class="tag">JUILLET</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Tour de France - Étape Nancy</h3>
+                        <p class="card-description">
+                            Régulièrement ville-étape du Tour de France. Arrivée sur la Place Stanislas, village départ, animations et caravane publicitaire.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-bicycle"></i> Cyclisme</span>
+                            <span><i class="fas fa-trophy"></i> Événement majeur</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Parcours</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1530333821974-f9fcfd6718c8?w=800" alt="Tennis">
+                        <span class="tag">SEPTEMBRE</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Open de Tennis de Nancy</h3>
+                        <p class="card-description">
+                            Tournoi Challenger ATP attirant de jeunes espoirs et anciens top 100. Tennis de qualité au Parc des Sports.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-table-tennis"></i> Tennis</span>
+                            <span><i class="fas fa-calendar"></i> 1 semaine</span>
+                            <span><i class="fas fa-euro-sign"></i> 10-50€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Programme</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Calendar Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Agenda du Mois</h2>
+                <p>Ne manquez rien de l'actualité nancéienne</p>
+            </div>
+
+            <div class="calendar-view">
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">15</span>
+                        <span class="cal-month">FÉV</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Salon du Chocolat</h4>
+                        <p>Parc des Expositions • 10h-19h • 8€</p>
+                    </div>
+                </div>
+
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">18</span>
+                        <span class="cal-month">FÉV</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Carnaval de Nancy</h4>
+                        <p>Centre-ville • 14h • Gratuit</p>
+                    </div>
+                </div>
+
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">22</span>
+                        <span class="cal-month">FÉV</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Soirée Stand-Up</h4>
+                        <p>Salle Poirel • 20h30 • 25€</p>
+                    </div>
+                </div>
+
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">1</span>
+                        <span class="cal-month">MARS</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Foire de Nancy</h4>
+                        <p>Parc des Expos • Toute la journée • 6€</p>
+                    </div>
+                </div>
+
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">8</span>
+                        <span class="cal-month">MARS</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Concert Philharmonique</h4>
+                        <p>Opéra • 20h • 15-45€</p>
+                    </div>
+                </div>
+
+                <div class="calendar-item">
+                    <div class="calendar-date">
+                        <span class="cal-day">15</span>
+                        <span class="cal-month">MARS</span>
+                    </div>
+                    <div class="calendar-info">
+                        <h4>Braderie de Printemps</h4>
+                        <p>Toute la ville • 9h-18h • Gratuit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="#" class="btn-primary">Voir l'agenda complet</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Ne Ratez Aucun Événement</h2>
+                <p>Recevez notre newsletter hebdomadaire avec tous les événements à venir</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stanis'Trip</h3>
+                    <p>Votre guide complet pour découvrir Nancy et ses trésors cachés.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="nourriture.html">Nourriture</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activite.html">Activité</a></li>
+                        <li><a href="evenement.html">Événement</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@stanistrip.fr</li>
+                        <li><i class="fas fa-phone"></i> +33 3 83 XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nancy, France</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stanis'Trip. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

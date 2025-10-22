@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture & Patrimoine - Stanis'Trip</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="logo.png" alt="Stanis'Trip Logo">
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <div class="nav-menu" id="navMenu">
+                    <div class="dropdown">
+                        <a href="nourriture.html" class="dropbtn">
+                            <i class="fas fa-utensils"></i> Nourriture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="nourriture.html#restaurants">Restaurants</a>
+                            <a href="nourriture.html#bars">Bars</a>
+                            <a href="nourriture.html#cafes">Cafés</a>
+                            <a href="nourriture.html#gastronomie">Gastronomie Locale</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="culture.html" class="dropbtn">
+                            <i class="fas fa-landmark"></i> Culture
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="#monuments">Monuments</a>
+                            <a href="#musees">Musées</a>
+                            <a href="#architecture">Architecture</a>
+                            <a href="#histoire">Histoire</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="activite.html" class="dropbtn">
+                            <i class="fas fa-running"></i> Activité
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="activite.html#sports">Sports</a>
+                            <a href="activite.html#nature">Nature</a>
+                            <a href="activite.html#loisirs">Loisirs</a>
+                            <a href="activite.html#enfants">Pour Enfants</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="evenement.html" class="dropbtn">
+                            <i class="fas fa-calendar-alt"></i> Événement
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="evenement.html#festivals">Festivals</a>
+                            <a href="evenement.html#concerts">Concerts</a>
+                            <a href="evenement.html#expositions">Expositions</a>
+                            <a href="evenement.html#sports-events">Événements Sportifs</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <a href="shopping.html" class="dropbtn">
+                            <i class="fas fa-shopping-bag"></i> Shopping
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="shopping.html#centres">Centres Commerciaux</a>
+                            <a href="shopping.html#boutiques">Boutiques</a>
+                            <a href="shopping.html#marches">Marchés</a>
+                            <a href="shopping.html#artisanat">Artisanat Local</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600') center/cover;">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Culture & Patrimoine</h1>
+            <p class="hero-subtitle">Découvrez l'histoire et l'art de Nancy</p>
+        </div>
+    </section>
+
+    <!-- Monuments Section -->
+    <section id="monuments" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Monuments Historiques</h2>
+                <p>Les joyaux architecturaux de Nancy</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/placestan.jpg" alt="Place Stanislas">
+                        <span class="tag">UNESCO</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Place Stanislas</h3>
+                        <p class="card-description">
+                            Chef-d'œuvre du 18ème siècle classé au patrimoine mondial de l'UNESCO. La plus belle place royale d'Europe.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-crown"></i> Patrimoine UNESCO</span>
+                            <span><i class="fas fa-calendar"></i> 1755</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Centre-ville</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/archere.jpg" alt="Arc Héré">
+                        <span class="tag">Monument</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Arc Héré</h3>
+                        <p class="card-description">
+                            Arc de triomphe dédié à Louis XV, œuvre d'Emmanuel Héré, reliant la vieille ville à la ville neuve.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-landmark"></i> Arc de Triomphe</span>
+                            <span><i class="fas fa-history"></i> Historique</span>
+                            <span><i class="fas fa-camera"></i> Photo spot</span>
+                        </div>
+                        <a href="#" class="btn-primary">En savoir plus</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/palais.jpeg" alt="Palais Ducal">
+                        <span class="tag">Palais</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Palais Ducal</h3>
+                        <p class="card-description">
+                            Ancienne résidence des ducs de Lorraine, joyau gothique flamboyant abritant le Musée Lorrain.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-crown"></i> Palais ducal</span>
+                            <span><i class="fas fa-building"></i> Musée</span>
+                            <span><i class="fas fa-clock"></i> Visites guidées</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visiter</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/basilique.jpg" alt="Basilique Saint-Epvre">
+                        <span class="tag">Religieux</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Basilique Saint-Epvre</h3>
+                        <p class="card-description">
+                            Magnifique basilique néo-gothique avec ses vitraux exceptionnels et son grand orgue Merklin.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-church"></i> Basilique</span>
+                            <span><i class="fas fa-palette"></i> Vitraux</span>
+                            <span><i class="fas fa-music"></i> Concerts</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/porte.jpg" alt="Porte de la Craffe">
+                        <span class="tag">Médiéval</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Porte de la Craffe</h3>
+                        <p class="card-description">
+                            Ancienne porte fortifiée du 14ème siècle, vestige des remparts médiévaux de Nancy.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-archway"></i> Fortifications</span>
+                            <span><i class="fas fa-calendar"></i> XIVe siècle</span>
+                            <span><i class="fas fa-shield-alt"></i> Médiéval</span>
+                        </div>
+                        <a href="#" class="btn-primary">Explorer</a>
+                    </div>
+                </div>
+
+    </section>
+
+    <!-- Musées Section -->
+    <section id="musees" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Musées & Galeries</h2>
+                <p>Collections d'exception et expositions temporaires</p>
+            </div>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/musée.jpeg" alt="Musée des Beaux-Arts">
+                        <span class="tag">Beaux-Arts</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Musée des Beaux-Arts</h3>
+                        <p class="card-description">
+                            Collection remarquable d'art européen du 14ème au 21ème siècle, dans un magnifique pavillon Art déco.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-palette"></i> Peintures</span>
+                            <span><i class="fas fa-sculpture"></i> Sculptures</span>
+                            <span><i class="fas fa-euro-sign"></i> 8€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Réserver</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/muséeécole.jpg" alt="Musée de l'École de Nancy">
+                        <span class="tag">Art Nouveau</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Musée de l'École de Nancy</h3>
+                        <p class="card-description">
+                            Dédié à l'Art Nouveau et à l'École de Nancy. Collection unique de meubles, verreries et objets d'art.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-gem"></i> Art Nouveau</span>
+                            <span><i class="fas fa-glass-whiskey"></i> Gallé & Daum</span>
+                            <span><i class="fas fa-euro-sign"></i> 6€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/museelorrain.jpg" alt="musée lorrain">
+                <span class="tag">Histoire</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Musée Lorrain</h3>
+                        <p class="card-description">
+                            Histoire de la Lorraine de la préhistoire au 20ème siècle, installé dans le Palais Ducal.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-scroll"></i> Histoire</span>
+                            <span><i class="fas fa-crown"></i> Palais Ducal</span>
+                            <span><i class="fas fa-euro-sign"></i> 7€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Visiter</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/aquarium.jpg" alt="Muséum Aquarium">
+                        <span class="tag">Sciences</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Muséum-Aquarium</h3>
+                        <p class="card-description">
+                            Musée d'histoire naturelle avec aquarium tropical, vivarium et collections zoologiques impressionnantes.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-fish"></i> Aquarium</span>
+                            <span><i class="fas fa-child"></i> Famille</span>
+                            <span><i class="fas fa-euro-sign"></i> 5€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Explorer</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/fer.jpg" alt="Musée de l'Histoire du Fer">
+                        <span class="tag">Industrie</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Musée de l'Histoire du Fer</h3>
+                        <p class="card-description">
+                            Unique en France, ce musée retrace 3000 ans d'histoire de la métallurgie et du travail du fer.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-industry"></i> Métallurgie</span>
+                            <span><i class="fas fa-hammer"></i> Savoir-faire</span>
+                            <span><i class="fas fa-euro-sign"></i> 5€</span>
+                        </div>
+                        <a href="#" class="btn-primary">Découvrir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/jbjeanmarie.jpg" alt="Jardin Botanique">
+                        <span class="tag">Nature</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Jardin Botanique Jean-Marie Pelt</h3>
+                        <p class="card-description">
+                            Jardin botanique de 35 hectares avec serres tropicales, jardin alpin et collections remarquables.
+                        </p>
+                        <div class="card-info">
+                            <span><i class="fas fa-leaf"></i> 12 000 espèces</span>
+                            <span><i class="fas fa-seedling"></i> Serres</span>
+                            <span><i class="fas fa-ticket-alt"></i> Gratuit</span>
+                        </div>
+                        <a href="#" class="btn-primary">Se promener</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Art Nouveau & Architecture</h2>
+                <p>Nancy, capitale de l'Art Nouveau</p>
+            </div>
+            
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/villamajorelle.jpg" alt="Villa Majorelle">
+                        <div class="highlight-badge">Art Nouveau</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Villa Majorelle</h3>
+                        <p>
+                            Chef-d'œuvre de l'architecte Henri Sauvage pour Louis Majorelle, ébéniste de renom. Vitraux, ferronneries et mobilier d'exception.
+                        </p>
+                        <a href="#" class="btn-link">Visiter <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/excelsior.jpg.webp" alt="Brasserie Excelsior">
+                        <div class="highlight-badge">Monument Historique</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Brasserie Excelsior</h3>
+                        <p>
+                            Décor Art Nouveau intact de 1911 avec ses vitraux, boiseries et lampes signées. Un voyage dans le temps garanti.
+                        </p>
+                        <a href="#" class="btn-link">Découvrir <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/quartier.jpeg" alt="Rue de la Commanderie">
+                        <div class="highlight-badge">Promenade</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Quartier Art Nouveau</h3>
+                        <p>
+                            Balade architecturale dans les rues où l'Art Nouveau s'exprime sur les façades : Saurupt, Commanderie, Chanzy...
+                        </p>
+                        <a href="#" class="btn-link">Circuit <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/cristallerie.jpg" alt="Daum Cristallerie">
+                        <div class="highlight-badge">Artisanat</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Cristallerie Daum</h3>
+                        <p>
+                            Manufacture fondée en 1878, toujours en activité. Visitez l'atelier et découvrez les techniques ancestrales du cristal.
+                        </p>
+                        <a href="#" class="btn-link">Boutique-Musée <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/saurupt.jpg" alt="Parc de Saurupt">
+                        <div class="highlight-badge">Parc</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Parc de Saurupt</h3>
+                        <p>
+                            Parc paysager abritant de somptueuses villas Art Nouveau dans un écrin de verdure. Parfait pour une balade culturelle.
+                        </p>
+                        <a href="#" class="btn-link">Se promener <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="highlight-image">
+                        <img src="images/chambrecommerce.jpg" alt="Chambre de Commerce">
+                        <div class="highlight-badge">Classé</div>
+                    </div>
+                    <div class="highlight-content">
+                        <h3>Chambre de Commerce</h3>
+                        <p>
+                            Édifice emblématique de l'Art Nouveau nancéien par les frères Vallin. Décor intérieur exceptionnel avec vitraux et ferronneries.
+                        </p>
+                        <a href="#" class="btn-link">Informations <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Histoire Section -->
+    <section id="histoire" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Histoire de Nancy</h2>
+                <p>Des origines médiévales à la ville moderne</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>11ème siècle - Fondation</h3>
+                        <p>
+                            Gérard d'Alsace, premier duc de Lorraine, fonde la ville de Nancy autour d'un château sur une colline dominant la Meurthe.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1477 - Bataille de Nancy</h3>
+                        <p>
+                            Charles le Téméraire, duc de Bourgogne, meurt lors de la bataille de Nancy. René II fait ériger une croix de Bourgogne pour commémorer cette victoire.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>16ème siècle - Ville Neuve</h3>
+                        <p>
+                            Le duc Charles III crée la Ville-Neuve pour étendre Nancy. Construction du Palais Ducal et développement de la prospérité lorraine.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1738-1766 - Stanislas Leszczynski</h3>
+                        <p>
+                            Le roi de Pologne Stanislas devient duc de Lorraine. Il embellit Nancy et fait construire la Place Royale (future Place Stanislas).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1871 - Annexion de l'Alsace-Moselle</h3>
+                        <p>
+                            Après la guerre franco-prussienne, Nancy devient ville frontière et connaît un important développement industriel et culturel.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1900 - École de Nancy</h3>
+                        <p>
+                            Apogée de l'Art Nouveau avec l'École de Nancy menée par Émile Gallé. Nancy devient capitale de l'Art Nouveau français.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>1983 - UNESCO</h3>
+                        <p>
+                            La Place Stanislas, la Place de la Carrière et la Place d'Alliance sont inscrites au patrimoine mondial de l'UNESCO.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Aujourd'hui - Métropole Dynamique</h3>
+                        <p>
+                            Nancy est une métropole étudiante et culturelle dynamique, fière de son patrimoine et tournée vers l'innovation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-box">
+                <h2>Restez Informé</h2>
+                <p>Recevez nos dernières recommandations culturelles et bons plans directement dans votre boîte mail</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn-primary">S'inscrire</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Stanis'Trip</h3>
+                    <p>Votre guide complet pour découvrir Nancy et ses trésors cachés.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="nourriture.html">Nourriture</a></li>
+                        <li><a href="culture.html">Culture</a></li>
+                        <li><a href="activite.html">Activité</a></li>
+                        <li><a href="evenement.html">Événement</a></li>
+                        <li><a href="shopping.html">Shopping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contact@stanistrip.fr</li>
+                        <li><i class="fas fa-phone"></i> +33 3 83 XX XX XX</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Nancy, France</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Informations</h4>
+                    <ul>
+                        <li><a href="#">À propos</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li>
+                        <li><a href="#">Partenaires</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stanis'Trip. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
